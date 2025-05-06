@@ -1,0 +1,21 @@
+
+Call:
+lm(formula = mean_temp_c ~ mean_tree_cover + mean_elevation, 
+    data = grid_data_final)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3964.2  -429.1   -25.6   839.5  2119.7 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)     43544.49    6988.29   6.231 3.51e-06 ***
+mean_tree_cover   -23.60      46.36  -0.509    0.616    
+mean_elevation     35.49      45.78   0.775    0.447    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1459 on 21 degrees of freedom
+Multiple R-squared:  0.03423,	Adjusted R-squared:  -0.05774 
+F-statistic: 0.3722 on 2 and 21 DF,  p-value: 0.6937
+
